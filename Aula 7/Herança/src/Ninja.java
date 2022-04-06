@@ -21,4 +21,7 @@ public class Ninja {
         return family;
     }
 
+    public String[] getJutsus() {
+        return jutsus;
+    }
 }
