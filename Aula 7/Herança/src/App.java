@@ -1,3 +1,5 @@
+package Herança.src;
+
 public class App {
     public static void main(String[] args) throws Exception {
         // Ninja jiraya = new Ninja("jiraya", "Familia", new String[] {"Corte vertical","Corte Horizontal"});

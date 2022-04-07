@@ -1,3 +1,5 @@
+package Herança.src;
+
 public class Ninja {
     protected String name;
     protected String family;

@@ -1,3 +1,5 @@
+package Herança.src;
+
 public class AcademicStudent extends Ninja {
 
     public AcademicStudent(String name, String family, String[] jutsus) {

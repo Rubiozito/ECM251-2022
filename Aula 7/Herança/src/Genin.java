@@ -1,3 +1,5 @@
+package Herança.src;
+
 public class Genin extends Ninja{
 
     public Genin(String name, String family, String[] jutsus, String mission) {
