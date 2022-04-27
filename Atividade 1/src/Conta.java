@@ -2,16 +2,12 @@ public class Conta {
     
     private int idConta;
     private double saldo;
-    private Usuario usuario;
+    public static int total_de_contas = 0;
     
-    public Contaa(int idConta, double saldo, Usuario usuario) {
-        this.idConta = idConta;
-        this.usuario = usuario;
-        this.saldo = saldo;
-    }
-
-    public String visualizarSaldo(){
-        return String.format("R$%.2f", saldo);
+    public Conta() {
+        idConta = total_de_contas;
+        this.saldo = 0;
+        total_de_contas++;
     }
 
     public boolean depositar(double valor){
@@ -21,9 +17,30 @@ public class Conta {
         return true;
     }
 
-    public String toString(){
-        return "idConta:" + idConta
-        +"\nNome:" + cliente.getNome() 
-        +"\nSaldo:"  + visualizarSaldo();  
+    public boolean sacar(double valor){
+        if(valor > this.saldo)
+            return false;
+        this.saldo -= valor;
+        return true;
     }
+
+    public boolean transferir(double valor, Conta destino){
+        if(!sacar(valor))
+            return false;
+        return destino.depositar(valor);
+    }
+
+    public int getIdConta() {
+        return idConta;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    @Override
+    public String toString() {
+        return "Conta [idConta=" + idConta + ", saldo=" + saldo + "]";
+    }
+
 }
