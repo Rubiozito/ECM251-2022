@@ -1,24 +1,21 @@
 public class Usuario{
    
     private String nome;
-    private String veiculoAtual;
+    private Veiculo veiculoAtual;
     
     public Usuario(String nome) {
         this.nome = nome;
-        veiculoAtual = "Sem Veiculo";
     }
 
     public String getNome() {
         return nome;
     }
 
-    public String getVeiculoAtual() {
+    public Veiculo getVeiculoAtual() {
         return veiculoAtual;
     }
 
-    public void setVeiculoAtual(String veiculoAtual) {
+    public void setVeiculoAtual(Veiculo veiculoAtual) {
         this.veiculoAtual = veiculoAtual;
     }
-   
-    
 }

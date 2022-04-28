@@ -12,16 +12,21 @@ public class Sistema {
         moto.testar(moto.ID, moto.custoPorHora);
         bicicleta.testar(bicicleta.ID, bicicleta.custoPorHora);
         patinete.testar(patinete.ID, carro.custoPorHora);
+
+        alugar(usuario1, carro);
+        alugar(usuario2, moto);
+        
+        trocar(usuario1, usuario2);
     }
 
-    public static void alugar(Usuario usuario, String veiculoDesejado){
-        if(usuario.getVeiculoAtual() == "Sem Veiculo"){
+    public static void alugar(Usuario usuario, Veiculo veiculoDesejado){
+        if(usuario.getVeiculoAtual() == null){
             usuario.setVeiculoAtual(veiculoDesejado);
         }
     }
 
     public static void trocar(Usuario usuarioT1, Usuario usuarioT2){
-        String vaga;
+        Veiculo vaga = new Veiculo("vaga", 0);
         vaga = usuarioT1.getVeiculoAtual();
         usuarioT1.setVeiculoAtual(usuarioT2.getVeiculoAtual());
         usuarioT2.setVeiculoAtual(vaga);
