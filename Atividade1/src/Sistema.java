@@ -22,6 +22,7 @@ public class Sistema {
     public static void alugar(Usuario usuario, Veiculo veiculoDesejado){
         if(usuario.getVeiculoAtual() == null){
             usuario.setVeiculoAtual(veiculoDesejado);
+
         }
     }
 
