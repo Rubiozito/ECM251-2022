@@ -1,6 +1,7 @@
 public class Jogada {
     private final EnumJogadas venco1;
     private final EnumJogadas venco2;
+    private String teste;
     
     public Jogada(EnumJogadas venco1, EnumJogadas venco2) {
         this.venco1 = venco1;
