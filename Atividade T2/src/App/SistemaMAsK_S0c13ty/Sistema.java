@@ -42,14 +42,14 @@ public class Sistema {
 
 
     public static void postarMensagens(ArrayList<Membro> hacker){
-        for(Membro item:hacker){
-            System.out.println("Membro: " + item.getNome() + "\n" + "Mensagem:" + item.postarMensagem());
+        for(Membro hck:hacker){
+            System.out.println("Membro: " + hck.getNome() + "\n" + "Mensagem:" + hck.postarMensagem());
         }
     }
 
     public static void mudarTurno(ArrayList<Membro> hacker, Horarios turno){
-        for(Membro item:hacker){
-            item.setTurno(turno);
+        for(Membro hck:hacker){
+            hck.setTurno(turno);
         }
     }
 }
