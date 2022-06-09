@@ -1,12 +1,7 @@
-package App.SistemaMAsK_S0c13ty;
+package App.Sistema;
 
 import java.util.ArrayList;
-
-import App.Membros.BigBrother;
-import App.Membros.HeavyLifter;
-import App.Membros.Membro;
-import App.Membros.MobileMember;
-import App.Membros.ScriptGuys;
+import App.Membros.*;
 import App.enums.Horarios;
 import App.enums.TiposDeMembros;
 
