@@ -13,7 +13,8 @@ class Carrinho():
         return len(self._itens)
 
     def adicionar(self, item):
-        pass
+        self._itens.append(item)
 
     def remover(self, item):
-        pass
+        if item in self._itens:
+            self._itens.remove(item)
